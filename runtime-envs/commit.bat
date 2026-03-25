@@ -1,40 +1,48 @@
 @echo off
+setlocal enabledelayedexpansion
+
 cd /d %~dp0\..
 
-:: Build message (removes outer quotes automatically)
-set message=%*
+:: First argument = feature name
+set feature=%1
 
-:: Remove surrounding quotes if present
+:: Remaining args = commit message
+shift
+set message=%*
 set message=%message:"=%
 
-:: Default message
+:: Defaults
+if "%feature%"=="" (
+    echo ❌ ERROR: You must provide a feature name
+    echo Example: commit login "feat: add auth"
+    pause
+    exit /b
+)
+
 if "%message%"=="" (
     set message=quick commit
 )
 
-:: Get current branch
-for /f "delims=" %%i in ('git branch --show-current') do set branch=%%i
+:: Build branch name
+set branch=feature/%feature%
 
-echo Current branch: %branch%
+echo Feature: %feature%
+echo Branch: %branch%
 echo Message: %message%
 
-:: Branch handling
-echo %branch% | findstr "feature/" >nul
-if %errorlevel%==0 goto commit
+:: Check current branch
+for /f "delims=" %%i in ('git branch --show-current') do set current=%%i
 
-if "%branch%"=="develop" goto commit
+:: If not already on this feature branch → create/switch
+if /i not "%current%"=="%branch%" (
+    git checkout -b %branch% 2>nul || git checkout %branch%
+)
 
-echo Switching to develop...
-git checkout develop
-set branch=develop
-
-:commit
+:: Commit flow
 git add .
-
-:: ✅ SAFE commit
 git commit -m "%message%"
-
 git push origin %branch%
 
-echo Done on %branch%
+echo.
+echo ✅ Done on %branch%
 pause
