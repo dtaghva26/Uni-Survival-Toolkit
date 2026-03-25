@@ -44,5 +44,5 @@ git commit -m "%message%"
 git push origin %branch%
 
 echo.
-echo ✅ Done on %branch%
+echo Done on %branch%
 pause

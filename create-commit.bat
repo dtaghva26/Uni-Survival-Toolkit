@@ -6,7 +6,7 @@ set msg=%*
 set msg=%msg:"=%
 
 if "%msg%"=="" (
-    echo ❌ Provide a message
+    echo Provide a message
     exit /b
 )
 
