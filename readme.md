@@ -1,10 +1,9 @@
-## 🎯 Sharpened Vision (Differentiated)
+## Uni Survival Toolkit — Vision
 
-The Uni Survival Toolkit is not another productivity or study app—it is a **decision system for students under pressure**. Instead of offering generic planners, budgeting sheets, or wellbeing tips, it actively interprets a student’s situation in real time and tells them **what to do next** across academics, money, and mental load.
+The Uni Survival Toolkit is designed as a practical, student-centered system that reduces everyday friction rather than adding more noise. Instead of positioning itself as another all-in-one productivity app, it focuses on the overlooked gaps in student life—shared living management, financial coordination, and real-world organization beyond coursework.
 
-What makes it different is its focus on **“messy reality mode”**—when deadlines stack, motivation drops, and finances tighten. The app doesn’t assume ideal behaviour; it adapts to crisis scenarios. A student can input “I have 3 deadlines, £20 left, and no energy,” and the system generates a **prioritised survival plan**: what assignment to tackle first, how to pass efficiently, what to eat on a minimal budget, and how to stabilise mentally within hours—not days.
+Its purpose is to make independent living during university simpler, more transparent, and less stressful. The toolkit provides structured support for the situations students actually face day-to-day, rather than abstract productivity ideals.
 
-Rather than separating study tools, finance apps, and wellbeing trackers, it connects them into one layer of **context-aware guidance**. Every recommendation is based on trade-offs students actually face: time vs grades, money vs health, effort vs outcome.
+What differentiates it is its emphasis on **collaboration within small, real-life groups**, such as households, rather than purely individual productivity. It treats students not just as learners, but as individuals managing budgets, responsibilities, and shared environments—often for the first time.
 
-At its core, the product’s edge is simple but powerful:
-👉 it doesn’t just help students organise their lives—it helps them **recover, adapt, and make smart decisions when things go wrong**.
+By prioritizing clarity, accountability, and simplicity, the Uni Survival Toolkit aims to reduce common sources of conflict and confusion. The result is an environment where students can focus more on their academic work and personal development, without being overwhelmed by logistical challenges.
